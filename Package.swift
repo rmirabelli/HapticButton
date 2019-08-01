@@ -21,9 +21,9 @@ let package = Package(
         .target(name: "HapticEvent"),
         .target(
             name: "HapticButton",
-            dependencies: ["HapticEvent"]),
+            dependencies: []),
         .testTarget(
             name: "HapticButtonTests",
-            dependencies: ["HapticButton", "HapticEvent"]),
+            dependencies: []),
     ]
 )
