@@ -32,13 +32,13 @@ public class HapticButton<B> {
     private var value: B?
     private let style: FeedbackStyle
 
-    init(_ initialValue: B, type: FeedbackStyle) {
+    public init(_ initialValue: B, type: FeedbackStyle) {
         precondition(initialValue is UIButton, "HapticButton may only be used with UIButtons")
         value = initialValue
         style = type
     }
 
-    init(type: FeedbackStyle) {
+    public init(type: FeedbackStyle) {
         value = nil
         style = type
     }
